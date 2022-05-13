@@ -1,0 +1,86 @@
+@import 'setting.scss';
+.board-content {
+  background-color: #3bb19b;
+  height: 100vh;
+  padding: 20px;
+
+ .table {
+  margin-top: 30px;
+  border: 6px;
+ }
+  
+
+  .link-view {
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 400;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+  .right-content {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  overflow: hidden;
+
+  .icon {
+    font-size: 14px;
+    margin-right: 0 3px;
+  }
+
+  .milestone-button {
+    position: fixed;
+    left: 1400px;
+    top: 10px;
+
+  }
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  &:after {
+    content: '';
+    flex: 0 0 10px;
+  }
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+
+  &::-webkit-scrollbar:horizontal {
+    height: 11px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #FFFAFA;
+    border-radius: 8px;
+  }
+
+
+  .add-new-column {
+    width: 250px;
+    max-width: 250px;
+    line-height: 32px;
+    padding: 4px 0 4px 15px;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+    font-size: 15px;
+    background-color: hsla(0, 0%, 100%, .24);
+    border-radius: 5px;
+
+    &:hover {
+      background-color: hsla(0, 0%, 100%, .34);
+    }
+  }
+
+
+
+  
+
+  
+}

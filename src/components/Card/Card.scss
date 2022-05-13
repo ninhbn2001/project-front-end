@@ -1,0 +1,124 @@
+// @import './setting.scss';
+
+.card-item {
+  
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  margin-bottom: 10px;
+
+  // img.card-cover {
+  //   display: block;
+  //   width: calc(100% + 2 * 10px);
+  //   margin: -10px 0 10px -10px;
+  //   border-top-left-radius: 4px;
+  //   border-top-right-radius: 4px;
+  // }
+
+  .column-dropdown-actions {
+    flex: 10%;
+    margin-left: 230px;
+
+    .dropdown {
+      
+      button.dropdown-btn {
+        padding: 0 10px;
+        font-size: 16px;
+        height: 32px;
+        margin-top: -14px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        background-color: #C0C0C0;
+        border-color: #C0C0C0;
+        color: #333;
+
+        &::after {
+          content: '...';
+          border: none;
+          vertical-align: 1.255em;
+        }
+
+        &:hover {
+          background-color: darken(#C0C0C0, 10);
+          border-color: darken(#C0C0C0, 10);
+        }
+      }
+
+    }
+
+    .dropdown-menu  {
+      padding: 0 ;
+      min-width: 200px;
+      // z-index: 9999;
+      a.dropdown-item {
+        padding: 0.1rem 1rem;
+        font-size: 14px;
+        &:not(:last-child) {
+          border-bottom: 1px solid darken(#C0C0C0, 10);
+        }
+      }
+    }
+  }
+
+
+
+  // .column-dropdown-actions {
+
+  //   flex: 10%;
+
+
+
+  //   .dropdown {
+  //     button.dropdown-btn {
+  //       padding: 0 10px;
+  //       font-size: 16px;
+  //       height: 32px;
+  //       margin-top: -14px;
+  //       font-weight: bold;
+  //       letter-spacing: 1px;
+  //       background-color: #C0C0C0;
+  //       border-color: #C0C0C0;
+  //       color: #333;
+
+  //       .drop-item {
+  //         z-index: 1000000 !important;
+  //       }
+
+  //       &::after {
+  //         content: '...';
+  //         border: none;
+  //         vertical-align: 1.255em;
+  //       }
+
+  //       &:hover {
+  //         background-color: darken(#C0C0C0, 10);
+  //         border-color: darken(#C0C0C0, 10);
+  //       }
+  //     }
+
+
+
+  //   }
+
+  //   .dropdown-menu {
+  //     padding: 0;
+  //     min-width: 200px;
+
+  //     a.dropdown-item {
+  //       padding: 0.1rem 1rem;
+  //       font-size: 14px;
+
+  //       &:not(:last-child) {
+  //         border-bottom: 1px solid darken(#C0C0C0, 10);
+  //       }
+  //     }
+
+
+  //   }
+  // }
+}

@@ -1,0 +1,111 @@
+@import 'setting.scss';
+
+.board-content {
+  height: 100vh;
+  background-color: #04715d;
+
+  .right-content {
+    .project-management-content {
+      margin-top: 10px;
+    }
+
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  overflow: hidden;
+  color: $app-main-text-color;
+
+  .icon {
+    font-size: 14px;
+    margin-right: 0 3px;
+  }
+
+  .milestone-button {
+    position: fixed;
+    left: 1400px;
+    top: 10px;
+
+  }
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  &:after {
+    content: '';
+    flex: 0 0 10px;
+  }
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+
+  &::-webkit-scrollbar:horizontal {
+    height: 11px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #FFFAFA;
+    border-radius: 8px;
+  }
+
+  .navbar-board {
+    height: $navbar-board-height;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #11b897;
+    font-size: 2.1rem;
+  }
+
+  .column-drop-preview {
+    background-color: rgba(150, 150, 200, 0.1);
+    border: 1px dashed #abc;
+    margin: 5px 45px 5px 5px;
+  }
+
+  .add-new-column {
+    width: 250px;
+    max-width: 250px;
+    line-height: 32px;
+    padding: 4px 0 4px 15px;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+    font-size: 15px;
+    background-color: hsla(0, 0%, 100%, .24);
+    border-radius: 5px;
+
+    &:hover {
+      background-color: hsla(0, 0%, 100%, .34);
+    }
+  }
+
+  .enter-new-column {
+    width: 250px;
+    max-width: 250px;
+    background-color: #ebecf0;
+    line-height: 32px;
+    padding: 4px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+
+    input.input-enter-new-column {
+      margin: 5px 0;
+    }
+
+    span.cancel-new-column {
+      margin-left: 10px;
+      cursor: pointer;
+
+      i {
+        font-size: 18px;
+        color: #ee5253;
+
+        &:hover {
+          color: darken(#ee5253, 10)
+        }
+      }
+    }
+  }
+}
